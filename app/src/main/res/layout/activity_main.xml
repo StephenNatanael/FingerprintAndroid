@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="50dp"
+    tools:context=".MainActivity"
+    android:background="#001B39">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/authText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#CBAF5D"
+        android:paddingTop="50dp"
+        android:text="Click Button to Authenticate"/>
+
+    <Button
+        android:id="@+id/authButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="100dp"
+        android:text="Authenticate"
+
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColor="#001B39"
+        android:drawableLeft="@drawable/fp_blue"
+        android:drawablePadding="10dp"/>
+</RelativeLayout>
